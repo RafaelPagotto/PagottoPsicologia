@@ -87,7 +87,7 @@ header {
 /* Match main content link style */
 .menu-list a { color: whitesmoke; text-decoration: none; }
 .menu-list a:hover { color: rgb(234, 55, 122); text-decoration: underline; }
-.menu-list a:active { color: #c9fbf5; }
+.menu-list a:active { color: whitesmoke }
 /* (close button removed) */
 
 
