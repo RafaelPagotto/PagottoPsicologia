@@ -1,0 +1,1 @@
+This project provides information about me as a licensed clinical psychologist - contact, license, chosen praxis and research resources.
