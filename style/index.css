@@ -101,18 +101,11 @@ a:hover {
 }
 
 .cta:hover {
-    background-color: #ea377a1a;
+    background-color: var(--accent);
     text-decoration: none;
+    color: var(--text)
 }
 
-.cta:active {
-    transform: translateY(1px);
-}
-
-.cta:focus-visible {
-    outline-color: var(--accent);
-    box-shadow: 0 0 0 3px #ea377a44;
-}
 
 .notice {
     padding: .75rem .9rem;
