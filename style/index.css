@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
 :root {
     --bg: #0f1115;
     --surface: #151821;
     --text: #e6e6e6;
     --muted: #a1a1aa;
     --border: #272b36;
-    --accent: #ea377a;
-}
-
-html {
-    scroll-behavior: smooth;
+    --accent: #d83470;
+    --font-body: "Source Sans 3", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+    --font-heading: "Source Sans 3", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
 }
 
 body {
     margin: 0;
     color: var(--text);
     background: var(--bg);
-    font: 400 1.05rem/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font: 400 1.05rem/1.55 var(--font-body);
 }
 
 header {
@@ -27,21 +27,10 @@ header {
     border-bottom: 1px solid var(--border);
 }
 
-header h1 {
-    font-size: 2.25rem;
-}
-
-header > h1,
 header > nav {
     width: min(820px, 92vw);
     margin-left: auto;
     margin-right: auto;
-}
-
-h1 {
-    margin: 0 0 .6rem;
-    text-align: center;
-    font: 700 2rem/1.2 "Merriweather", serif;
 }
 
 nav {
@@ -65,10 +54,22 @@ section {
     scroll-margin-top: 7rem;
 }
 
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
 h2 {
     margin: 0 0 .75rem;
     font-size: 1.45rem;
     line-height: 1.25;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 p,
@@ -106,16 +107,11 @@ a:hover {
     color: var(--text)
 }
 
-
 .notice {
     padding: .75rem .9rem;
     border: 1px solid var(--border);
     border-radius: .6rem;
     color: var(--muted);
-}
-
-.alert {
-    border-color: #7b2e3f;
 }
 
 footer {
@@ -136,18 +132,9 @@ a:focus-visible {
 }
 
 @media (max-width: 640px) {
-    header h1 {
-        font-size: 2.25rem;
-    }
-
     body {
         font-size: .98rem;
         line-height: 1.5;
-    }
-
-    h1 {
-        font-size: 1.55rem;
-        line-height: 1.2;
     }
 
     h2 {
@@ -183,20 +170,12 @@ a:focus-visible {
 }
 
 @media (max-width: 430px) {    
-    header h1 {
-        font-size: 2rem;
-    }
-    
     nav {
         margin: auto 5rem auto 5rem;
     }
 
     body {
         font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 1.25rem;
     }
 
     h2 {
